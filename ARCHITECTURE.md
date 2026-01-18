@@ -1,5 +1,10 @@
 # Architecture Documentation
 
+**Project:** Collaborative Drawing Canvas  
+**Author:** RED1EYE  
+**Repository:** https://github.com/RED1EYE/collaborative-canvas  
+**Live Demo:** https://redeye-fribble.onrender.com/
+
 ## System Overview
 
 This is a real-time collaborative drawing application using WebSocket for bidirectional communication between clients and server.
