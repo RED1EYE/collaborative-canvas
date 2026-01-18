@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Drawing Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Toolbar -->
+        <div class="toolbar">
+            <div class="logo">
+                <h2>🎨 Canvas</h2>
+            </div>
+            
+            <div class="tool-section">
+                <h3>Tools</h3>
+                <div class="tool-buttons">
+                    <button id="brushBtn" class="tool-btn active" title="Brush">
+                        <span class="icon">✏️</span>
+                        Brush
+                    </button>
+                    <button id="eraserBtn" class="tool-btn" title="Eraser">
+                        <span class="icon">🧹</span>
+                        Eraser
+                    </button>
+                </div>
+            </div>
+            
+            <div class="tool-section">
+                <h3>Color</h3>
+                <input type="color" id="colorPicker" value="#000000" title="Pick a color">
+                <div class="color-presets">
+                    <button class="color-preset" style="background: #000000;" data-color="#000000"></button>
+                    <button class="color-preset" style="background: #FF0000;" data-color="#FF0000"></button>
+                    <button class="color-preset" style="background: #00FF00;" data-color="#00FF00"></button>
+                    <button class="color-preset" style="background: #0000FF;" data-color="#0000FF"></button>
+                    <button class="color-preset" style="background: #FFFF00;" data-color="#FFFF00"></button>
+                    <button class="color-preset" style="background: #FF00FF;" data-color="#FF00FF"></button>
+                </div>
+            </div>
+            
+            <div class="tool-section">
+                <h3>Width</h3>
+                <input type="range" id="widthSlider" min="1" max="20" value="2" title="Brush width">
+                <div class="width-display">
+                    <span id="widthValue">2</span>px
+                </div>
+            </div>
+            
+            <div class="tool-section">
+                <h3>Actions</h3>
+                <div class="action-buttons">
+                    <button id="undoBtn" class="action-btn" title="Undo last action">
+                        <span class="icon">↶</span>
+                        Undo
+                    </button>
+                    <button id="redoBtn" class="action-btn" title="Redo last action">
+                        <span class="icon">↷</span>
+                        Redo
+                    </button>
+                    <button id="clearBtn" class="action-btn danger" title="Clear canvas">
+                        <span class="icon">🗑️</span>
+                        Clear
+                    </button>
+                </div>
+            </div>
+            
+            <div class="connection-status">
+                <div id="connectionIndicator" class="status-indicator connecting">
+                    <span class="status-dot"></span>
+                    <span id="connectionText">Connecting...</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Canvas Area -->
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+        
+        <!-- Right Sidebar - Users -->
+        <div class="users-sidebar">
+            <div class="users-header">
+                <h3>👥 Online Users</h3>
+                <span id="userCount" class="user-count">0</span>
+            </div>
+            <ul id="userList" class="user-list"></ul>
+        </div>
+    </div>
+    
+    <script src="canvas.js"></script>
+    <script src="websocket-client.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
