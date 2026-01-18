@@ -7,20 +7,23 @@
     "start": "node server/server.js",
     "dev": "nodemon server/server.js"
   },
-  "keywords": [
-    "websocket",
-    "canvas",
-    "collaborative",
-    "real-time"
-  ],
-  "author": "Your Name",
+  "keywords": ["websocket", "canvas", "collaborative", "real-time"],
+  "author": "RED1EYE",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RED1EYE/collaborative-canvas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RED1EYE/collaborative-canvas/issues"
+  },
+  "homepage": "https://github.com/RED1EYE/collaborative-canvas#readme",
   "dependencies": {
-    "express": "^4.22.1",
-    "ws": "^8.19.0"
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.0.1"
   },
   "engines": {
     "node": ">=14.0.0"
