@@ -1,5 +1,9 @@
 # 🎨 Real-Time Collaborative Drawing Canvas
 
+**🌐 Live Demo:** https://redeye-fribble.onrender.com/
+
+**📁 GitHub Repository:** https://github.com/RED1EYE/collaborative-canvas
+
 A multi-user collaborative drawing application built with vanilla JavaScript, HTML5 Canvas API, and WebSocket for real-time synchronization.
 
 ## ✨ Features
@@ -24,7 +28,7 @@ A multi-user collaborative drawing application built with vanilla JavaScript, HT
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/collaborative-canvas.git
+git clone https://github.com/RED1EYE/collaborative-canvas.git
 cd collaborative-canvas
 ```
 
@@ -83,7 +87,7 @@ collaborative-canvas/
 │   └── server.js            # Express + WebSocket server
 ├── .gitignore
 ├── package.json
-├── Procfile                 # For Heroku deployment
+├── Procfile                 # For deployment
 ├── README.md
 └── ARCHITECTURE.md
 ```
@@ -117,72 +121,13 @@ PORT=3000  # Server port (default: 3000)
 npm run dev  # Uses nodemon for auto-restart
 ```
 
-## 🌐 Deployment
-
-### Deploy to Render (Free)
-
-1. **Create account** at [render.com](https://render.com)
-
-2. **Create new Web Service**
-   - Connect your GitHub repository
-   - Select branch: `main`
-
-3. **Configure**
-   - Build Command: `npm install`
-   - Start Command: `npm start`
-   - Environment: `Node`
-
-4. **Deploy** - Click "Create Web Service"
-
-5. **Access** - Your app will be live at `https://your-app-name.onrender.com`
-
-### Deploy to Heroku
-```bash
-# Login to Heroku
-heroku login
-
-# Create app
-heroku create your-app-name
-
-# Deploy
-git push heroku main
-
-# Open app
-heroku open
-```
-
-### Deploy to Railway
-
-1. Visit [railway.app](https://railway.app)
-2. Click "New Project"
-3. Select "Deploy from GitHub repo"
-4. Select your repository
-5. Railway auto-detects Node.js and deploys
-
-## 🧪 Testing
-
-### Manual Testing Checklist
-- [x] Drawing with mouse
-- [x] Drawing with touch
-- [x] Color changes
-- [x] Width changes
-- [x] Tool switching
-- [x] Undo/Redo
-- [x] Multi-user sync
-- [x] User cursors
-- [x] Connection/Disconnection
+### Live Demo
+**Deployed on Render:** https://redeye-fribble.onrender.com/
 
 ### Load Testing
 - Tested with up to 10 simultaneous users
 - Smooth performance with 100+ drawing operations
 - Average latency: <100ms
-
-## ⚠️ Known Limitations
-
-1. **No persistence** - Canvas clears when server restarts (in-memory storage)
-2. **Global undo** - Undo affects last operation by anyone, not per-user
-3. **Scalability** - Optimized for ~50 concurrent users per instance
-4. **Browser support** - Requires modern browser with WebSocket support
 
 ## 🚧 Future Enhancements
 
@@ -196,13 +141,6 @@ heroku open
 - [ ] Layer system
 - [ ] Per-user undo/redo
 
-## 📊 Time Spent
-
-- **Day 1**: 10 hours (WebSocket learning + real-time sync)
-- **Day 2**: 10 hours (Undo/redo + user features)
-- **Day 3**: 10 hours (Polish + documentation + deployment)
-- **Total**: 30 hours
-
 ## 📄 License
 
 MIT License - feel free to use this project for learning or as a base for your own applications.
@@ -211,13 +149,24 @@ MIT License - feel free to use this project for learning or as a base for your o
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](https://github.com/RED1EYE/collaborative-canvas/issues).
+
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+**RED1EYE**
+- GitHub: [@RED1EYE](https://github.com/RED1EYE)
+- Project: [collaborative-canvas](https://github.com/RED1EYE/collaborative-canvas)
+- Live Demo: [https://redeye-fribble.onrender.com/](https://redeye-fribble.onrender.com/)
 
 ## 🙏 Acknowledgments
 
 - HTML5 Canvas API documentation
 - WebSocket specification
 - Node.js community
+- Express.js framework
+
+---
+
+**⭐ If you found this project helpful, please give it a star on GitHub!**
+
+**💬 Questions or feedback?** Open an issue at [github.com/RED1EYE/collaborative-canvas/issues](https://github.com/RED1EYE/collaborative-canvas/issues)
