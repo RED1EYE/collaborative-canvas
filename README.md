@@ -277,10 +277,23 @@ These represent intentional trade-offs for the assignment scope:
 ## 📊 Development & Time Investment
 
 ### **Time Breakdown:**
-- **Day 1 (10 hours):** WebSocket research, server setup, basic drawing sync
-- **Day 2 (10 hours):** Undo/redo system, user management, cursor indicators
-- **Day 3 (10 hours):** UI polish, testing, documentation, deployment
-- **Total: 30 hours** over 3 days
+* **Day 1 (6 hours): Research & Infrastructure**
+    * WebSocket protocol research and architecture planning.
+    * Server-side environment setup and initial handshake logic.
+* **Day 2 (6 hours): Core Synchronization**
+    * Canvas engine integration and real-time stroke synchronization.
+    * Broadcasting drawing data to multiple connected clients.
+* **Day 3 (6 hours): State Management & Logic**
+    * Implementing a robust Undo/Redo system using action stacks.
+    * User session management and authentication flow.
+* **Day 4 (6 hours): Collaboration & UX**
+    * Adding real-time cursor indicators and user presence (who's online).
+    * UI polish, responsive design, and CSS refinements.
+* **Day 5 (6 hours): QA & Deployment**
+    * End-to-end testing, bug fixing, and performance optimization.
+    * Writing documentation and final production deployment.
+
+**Total: 30 hours over 5 days**
 
 ### **Testing:**
 - Manual testing with 2-10 simultaneous users
